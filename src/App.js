@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Congo from "./components/Congo";
+import Form from "./components/Form";
+import Workspace from "./components/Workspace";
+import WorkspaceFor from "./components/WorkspaceFor";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Form />} />
+          <Route path="/workspace" element={<Workspace />} />
+          <Route path="/workspace-for" element={<WorkspaceFor />} />
+          <Route path="/congratulations" element={<Congo />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
