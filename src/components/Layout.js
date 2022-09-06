@@ -21,7 +21,7 @@ const Layout = ({
     >
       <img src={logo} alt="logo" id="logo" />
       {<ComplitionIndicator one={one} two={two} three={three} four={four} />}
-      {heading && <h1>{heading}</h1>}
+      {heading && <h1 className="main_heading">{heading}</h1>}
       {para && <p>{para}</p>}
       <>{children}</>
       {buttonText && <button type="submit">{buttonText}</button>}

@@ -5,7 +5,6 @@ import InputLabel from "./InputLabel";
 import Layout from "./Layout";
 
 const Form = () => {
-  
   return (
     <Layout
       heading={"Welecome! First things first..."}
@@ -15,7 +14,7 @@ const Form = () => {
       three={false}
       four={false}
     >
-      <FormGroup sx={{ width: "50ch", margin: "3rem auto", gap: "2rem" }}>
+      <FormGroup sx={{ width: "40ch", margin: "3rem auto", gap: "2rem" }}>
         <InputLabel label="Full Name" placeholder="Jashan Dhiman" name="name" />
         <InputLabel
           label="Display Name"

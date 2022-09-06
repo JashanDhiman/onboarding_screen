@@ -17,6 +17,9 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+.main_heading {
+  font-size: clamp(1.5rem, 3.5vw, 3rem);
+}
 .selectionBox {
   display: flex;
   gap: 1rem;

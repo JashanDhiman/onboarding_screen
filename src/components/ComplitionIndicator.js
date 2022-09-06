@@ -41,7 +41,9 @@ const ComplitionIndicator = ({ one, two, three, four }) => {
     );
   };
   return (
-    <div style={{ display: "flex", justifyContent: "center", margin: "3rem" }}>
+    <div
+      style={{ display: "flex", justifyContent: "center", margin: "3rem auto" }}
+    >
       <Dot active={one} num={1} lline={false} rline={true} />
       <Dot active={two} num={2} lline={true} rline={true} />
       <Dot active={three} num={3} lline={true} rline={true} />
